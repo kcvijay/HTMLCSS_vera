@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-header">
+            <h1>Sign Up</h1>
+            <p>Open an account to use almost all our services online and receive fantastic and never-seen offers every week.</p>
+        </div>
+        <form>
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" placeholder="For ex. John" required>
+            </div>
+            
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="For ex. Doe" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="email@website.com" required>
+            </div>
+
+            <div class="psw-container">
+                <label for="psw">Password:</label>
+                <input type="password" id="psw" oninput="pswLength()" required >
+                <img src="eye.png" alt="icon of an eye" id="icon-eye" onclick="showPsw()">
+            </div>
+
+            <div>
+                <label for="psw-2">Password again:</label>
+                <input type="password" id="psw-2" oninput="pswStatus()" required>
+            </div>
+
+            <p id="psw-txt"></p>
+            <div class="pswStrength">
+                <div class="strengthMeter" style="background:red; width: 0%; padding: 5px 0; transition: 0.3s ease; border-radius: 3px;"></div>
+            </div>
+
+            <button type="submit" id="submit">Open an Account</button>
+
+            <p id="account-txt"></p>
+
+            <p class="footer-txt">By opening an account, your agree to our <a href="#">Privacy Policies</a> and <a href="#">Terms and Conditions</a>.</p>
+        </form>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

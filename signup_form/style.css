@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, blue, aqua);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 11px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-header h1 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #006aff;
+}
+
+.form-header p {
+    color: rgb(37, 77, 128);
+    font-size: 1.5rem;
+}
+
+form label {
+    display: inline-block;
+    width: 12rem;
+    font-size: 1.4rem;
+    color: #333;
+ 
+}
+
+form input {
+    width: 62%;
+    margin-bottom: 1rem;
+    height: 3rem;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 3px;
+    padding: 0 1rem;
+    font-family: inherit;
+    margin-right: rem;
+    font-size: 1.4rem;
+}
+.psw-container{
+    position: relative;
+}
+#icon-eye {
+    width: 2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    cursor: pointer;
+    filter: opacity(0.8);
+}
+
+#submit {
+    width: 100%;
+    height: 4rem;
+    text-transform: uppercase;
+    background: #006aff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    font-family: inherit;
+}
+
+#submit:hover, #submit:active {
+    box-shadow: none;
+    filter: opacity(0.8)
+}
+
+#psw-txt, #account-txt, .footer-txt {
+    font-size: 1.5rem;
+    color: #777;
+    margin: 1rem 0;
+}
