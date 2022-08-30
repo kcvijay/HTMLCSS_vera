@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,10 +12,10 @@ html {
 }
 
 body {
-    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, blue, aqua);
+    background-image: linear-gradient(to bottom right, rgb(131, 131, 244), rgb(77, 144, 243));
 }
 
 .main-container {
@@ -24,14 +26,28 @@ body {
     max-width: 40rem;
     margin: 0 auto;
     margin-top: 4rem;
-    padding: 3rem;
     background-color: #fff;
-    border-radius: 11px;
+    border-radius: 3px solid #fff;;
 }
 
-.form-header {
+.main-container h1 {
+    padding: 30px 0;
+    background: rgb(0, 89, 255);
+    width: 100%;
     text-align: center;
-    margin-bottom: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sub-container {
+    padding: 30px;
+    border-radius: 11px 11px 0 0;
+}
+
+.form-header p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(192, 188, 188);
 }
 
 .form-header h1 {

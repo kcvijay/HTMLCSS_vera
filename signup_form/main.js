@@ -15,7 +15,7 @@ function showPsw() {
 
 pswStatus = () => {
     if(pswInput.value === pswInputAgain.value) {
-        pswInputAgain.style.outline = "3px solid green";
+        pswInputAgain.style.outline = "3px solid lightgreen";
     } else if(pswInput.value != pswInputAgain.value) {
         pswInputAgain.style.outline= "3px solid red";
     } else return;
@@ -29,11 +29,11 @@ if(pswInput.value.length <= 5) {
 } else if (pswInput.value.length > 5 && pswInput.value.length <= 8) {
     pswTxt.textContent = "Normal";
     pswStrength.style.width = "22%";
-    pswStrength.style.background = "lightgreen";
+    pswStrength.style.background = "green";
 } else if (pswInput.value.length > 8) {
     pswTxt.textContent = "Strong";
     pswStrength.style.width = "33%";
-    pswStrength.style.background = "green";
+    pswStrength.style.background = "darkgreen";
 }
 }
 
