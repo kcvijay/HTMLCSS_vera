@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas:
+    "title title title title title title nav1 nav1 nav2 nav2 nav3 nav3"
+    "Ptitle Ptitle Ptitle Ptitle Ptitle Ptitle Ptitle Ptitle Ptitle sidebar sidebar sidebar"
+    "meta meta content content content content content content content sidebar sidebar sidebar"
+    "meta meta content content content content content content content ads ads ads"
+    "meta meta image image image image image image image ads ads ads"
+    "meta meta image image image image image image image stuff stuff stuff"
+    "meta meta image image image image image image image stuff stuff stuff"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-auto-rows: 1fr;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  min-height: 90px;
+  padding: 1rem;
+}
+
+.Stitle {
+  grid-area: title;
+  background: yellow;
+}
+
+.nav1 {
+  grid-area: nav1;
+  background: pink;
+}
+
+.nav2 {
+  grid-area: nav2;
+  background: pink;
+}
+
+.nav3 {
+  grid-area: nav3;
+  background: pink;
+}
+
+.Ptitle {
+  grid-area: Ptitle;
+  background: skyblue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: rgb(218, 150, 102);
+}
+
+.meta {
+  grid-area: meta;
+  background: aquamarine;
+}
+
+.content {
+  grid-area: content;
+  background: rgb(159, 159, 159);
+}
+
+.ads {
+  grid-area: ads;
+  background: green;
+  color: #fff;
+}
+
+.image {
+  grid-area: image;
+  background: yellowgreen;
+}
+
+.stuff {
+  grid-area: stuff;
+  background: purple;
+  color: #fff;
+}
+
+.footer {
+  grid-area: footer;
+  background: #555;
+  color: #fff;
+  text-align: center;
+}
+
+/* .sidebar,
+.ads,
+.stuff {
+  width: 300px;
+} */
