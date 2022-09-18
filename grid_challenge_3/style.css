@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -97,6 +98,20 @@ nav li a:active {
 main {
   width: 90rem;
   margin: 0 auto;
+  position: relative;
+}
+
+#toTop {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: chocolate;
+  color: #fff;
+  padding: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  display: none;
 }
 
 .section-header {
