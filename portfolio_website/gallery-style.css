@@ -32,7 +32,7 @@ header {
 .logo a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #333;
+  color: #fff;
   padding-left: 2rem;
 }
 
@@ -96,7 +96,7 @@ nav li a:active {
 }
 
 main {
-  width: 90rem;
+  width: 120rem;
   margin: 0 auto;
   position: relative;
 }

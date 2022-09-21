@@ -50,10 +50,11 @@
       <nav>
         <ul>
           <a href="#"><li>Home</li></a>
-          <a href="#"><li>About me</li></a>
-          <a href="#"><li>Projects</li></a>
-          <a href="#"><li>Skills</li></a>
-          <a href="#"><li>Contact</li></a>
+          <a href="#about-me"><li>About me</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#gallery"><li>Gallery</li></a>
+          <a href="#contact"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
@@ -88,7 +89,7 @@
         </div>
       </div>
 
-      <section class="section-aboutme">
+      <section class="section-aboutme" id="about-me">
         <div class="about-txt">
           <h3>About me</h3>
           <p>
@@ -110,9 +111,8 @@
         </div>
         <div></div>
       </section>
-      -->
 
-      <section class="section--project">
+      <section class="section--project" id="projects">
         <h2 class="section-header">Projects</h2>
         <div class="cards">
           <div class="card card--1">
@@ -139,7 +139,7 @@
         </div>
       </section>
 
-      <section class="section--skills">
+      <section class="section--skills" id="skills">
         <h2 class="section-header">Skills</h2>
         <div class="skill">
           <div class="skill--header">
@@ -228,8 +228,69 @@
         </div>
       </section>
 
-      <section class="section-contact">
-        <h2 class="section-header">Contact Me</h2>
+      <section class="section-gallery" id="gallery">
+          <h2 class="section-header">Gallery</h2>
+        </div>
+        <div class="gallery-container">
+          <div class="img-container pic1">
+            <img src="photos/pic1.webp" alt="Image" />
+            <div class="description">Beside a Beach</div>
+          </div>
+          <div class="img-container pic2">
+            <img src="photos/pic2.webp" alt="Image" />
+            <div class="description">Sunset at Beach</div>
+          </div>
+          <div class="img-container pic3">
+            <img src="photos/pic3.webp" alt="Image" />
+            <div class="description">Himalayas, Nepal</div>
+          </div>
+          <div class="img-container pic4">
+            <img src="photos/pic4.webp" alt="Image" />
+            <div class="description">Swayambhunath Temple, Kathmandu</div>
+          </div>
+          <div class="img-container pic5">
+            <img src="photos/pic5.webp" alt="Image" />
+            <div class="description">Himalayas, Nepal</div>
+          </div>
+          <div class="img-container pic6">
+            <img src="photos/pic6.webp" alt="Image" />
+            <div class="description">Machhapuchchhre Mountain, Nepal</div>
+          </div>
+          <div class="img-container pic7">
+            <img src="photos/pic7.webp" alt="Image" />
+            <div class="description">Skyscrapers</div>
+          </div>
+          <div class="img-container pic8">
+            <img src="photos/pic8.webp" alt="Image" />
+            <div class="description">Highrises</div>
+          </div>
+          <div class="img-container pic9">
+            <img src="photos/pic9.webp" alt="Image" />
+            <div class="description">Highrise</div>
+          </div>
+          <div class="img-container pic10">
+            <img src="photos/pic10.webp" alt="Image" />
+            <div class="description">Helsinki Cathedral, Helsinki</div>
+          </div>
+          <div class="img-container pic11">
+            <img src="photos/pic11.webp" alt="Image" />
+            <div class="description">Aurora Borealis, Rovaniemi</div>
+          </div>
+          <div class="img-container pic12">
+            <img src="photos/pic12.webp" alt="Image" />
+            <div class="description">(4) Katajanokka - Munkkivuori</div>
+          </div>
+        </div>
+        <p>
+          Images from:
+          <a href="https://www.unsplash.com" target="_blank">Unsplash</a>
+        </p>
+      </section>
+
+      <section class="section-contact" id="contact">
+        <div class="contact-grid">
+          <div class="contact-1">
+            <h2 class="section-header">Contact Me</h2>
         <form>
           <div>
             <label for="fullname">Your Full Name:</label>
@@ -258,6 +319,12 @@
             <input type="submit" id="submit" value="SEND" />
           </div>
         </form>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47404.396464426805!2d24.907470156569833!3d60.20665331440235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692098e1308cda1%3A0x2600b5523c1946c1!2sPasila%2C%20Helsinki!5e0!3m2!1sen!2sfi!4v1663784885037!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        
       </section>
       <footer>
         <div class="copyright-txt">Copyright &copy; 2022 Vijay KC</div>
@@ -269,7 +336,8 @@
             ><img src="media/linkedin.png" alt="github icon"
           /></a>
         </div>
-        <button id="to-top">Return to Top</button>
+        <div class="overlay" onclick="this.style.display = 'none';"></div>
+        <button id="toTop">Return to Top</button>
       </footer>
     </main>
     <script src="main.js"></script>
