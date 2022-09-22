@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Nunito sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -53,6 +52,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:active {
   background-color: #e4e4e4;
+  color: #333;
 }
 
 .logo a {
@@ -102,7 +102,7 @@ nav ul li a:active {
   display: block;
   text-align: center;
   z-index: 1000;
-  animation: menuSlideRight 0.3s ease-in-out;
+  animation: menuSlideRight 0.7s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 nav.mobile-menu ul {
@@ -201,6 +201,11 @@ main {
   background: #fff;
   border-radius: 50%;
   filter: grayscale(1);
+  transition: 0.3s ease;
+}
+
+.programs img:hover {
+  filter: grayscale(0);
 }
 
 .btn-primary {

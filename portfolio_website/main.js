@@ -44,7 +44,7 @@ iconToggle.addEventListener("click", menuToggle);
 
 for (const list of menuList) {
   list.addEventListener("click", () => {
-    menuToggle();
+    nav.classList.remove("mobile-menu");
   });
 }
 
