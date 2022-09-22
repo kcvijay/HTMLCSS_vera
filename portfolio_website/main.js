@@ -12,6 +12,9 @@ const iconToggle = document.querySelector("#icon-toggle");
 const menuList = document.querySelectorAll("nav ul li a");
 const btnTop = document.querySelector("#toTop");
 
+const cookiesModal = document.querySelector(".cookies-modal");
+const btnCookies = document.querySelectorAll(".cookies-btns a");
+
 //Skill items accordian activation
 skills.forEach((header) => {
   header.addEventListener("click", () => {
@@ -61,6 +64,11 @@ window.onscroll = function () {
   revealToTopBtn();
 };
 
+//Displaying a Cookies modal
+function displayCookieModal() {
+  cookiesModal.style.display = "block";
+}
+
 iconToggle.addEventListener("click", menuToggle);
 
 for (const list of menuList) {
@@ -71,10 +79,11 @@ for (const list of menuList) {
 }
 
 btnTop.addEventListener("click", getToTop);
-// menuList.forEach((list) => {
-//   list.addEventListener("click", () => {
-//     if (nav.classList.contains("mobile-menu")) {
-//       nav.classList.remove("mobile-menu");
-//     }
-//   });
-// });
+
+btnCookies.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    cookiesModal.style.display = "none";
+  });
+});
+
+setTimeout(displayCookieModal, 5000);
