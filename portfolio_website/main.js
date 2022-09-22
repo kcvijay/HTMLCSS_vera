@@ -9,9 +9,11 @@ const scrollTop = document.querySelector("#to-top");
 const imgs = document.querySelectorAll(".gallery-container img");
 const overlay = document.querySelector(".overlay");
 
+const nav = document.querySelector("nav");
 const mobMenu = document.querySelector(".mobile-menu");
+const iconToggle = document.querySelector("#icon-toggle");
 
-const menuList = document.querySelectorAll("nav ul li");
+const menuList = document.querySelectorAll("nav ul li a");
 const btnTop = document.querySelector("#toTop");
 
 skills.forEach((header) => {
@@ -23,7 +25,7 @@ skills.forEach((header) => {
 imgs.forEach((img) => {
   img.addEventListener("click", function () {
     overlay.style.backgroundImage = "url(" + img.src + ")";
-    overlay.style.backgroundSize = "30%";
+    overlay.style.backgroundSize = "80%";
     overlay.style.display = "block";
   });
 });
@@ -31,22 +33,28 @@ imgs.forEach((img) => {
 function menuToggle() {
   if (nav.classList.contains("mobile-menu")) {
     nav.classList.remove("mobile-menu");
-    menuIcon.textContent = "menu";
+    iconToggle.textContent = "menu";
   } else {
     nav.classList.add("mobile-menu");
-    menuIcon.textContent = "close";
+    iconToggle.textContent = "close";
   }
 }
 
-toggle.addEventListener("click", menuToggle);
+iconToggle.addEventListener("click", menuToggle);
 
 for (const list of menuList) {
   list.addEventListener("click", () => {
-    if (nav.classList.contains(".mobile-menu")) {
-      nav.classList.remove(".mobile-menu");
-    }
+    menuToggle();
   });
 }
+
+// menuList.forEach((list) => {
+//   list.addEventListener("click", () => {
+//     if (nav.classList.contains("mobile-menu")) {
+//       nav.classList.remove("mobile-menu");
+//     }
+//   });
+// });
 
 function revealToTopBtn() {
   if (
