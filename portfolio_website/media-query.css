@@ -29,11 +29,10 @@
   }
 
   .hero-txt {
-    background-color: #fff;
+    background-color: var(--shade);
     padding: 2rem;
     width: 80vw;
     margin: 0 auto;
-    box-shadow: 0 0 0.5rem #fff;
   }
 
   .programs {

@@ -73,10 +73,7 @@ header {
   align-items: center;
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.1);
   padding: 0 2.5rem;
-  position: sticky;
-  position: -webkit-sticky;
   z-index: 100;
-  top: 0;
 }
 
 header a {
@@ -148,7 +145,7 @@ nav ul li a:active {
 
 .mobile-menu {
   position: fixed;
-  top: 7rem;
+  top: 6.5rem;
   left: 0;
   width: 100%;
   height: auto;
@@ -276,6 +273,7 @@ main {
   height: 4rem;
   margin-left: -1rem;
   background: #fff;
+  border: 3px solid #fff;
   border-radius: 50%;
   filter: grayscale(1);
   transition: 0.3s ease-in-out;
@@ -686,7 +684,7 @@ footer img {
   background: #333;
   text-align: left;
   padding: 3rem;
-  right: 0;
+  left: 0;
   bottom: 0;
   max-width: 25vw;
   min-width: 30rem;
