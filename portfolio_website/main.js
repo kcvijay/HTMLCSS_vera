@@ -26,7 +26,7 @@ skills.forEach((header) => {
 imgs.forEach((img) => {
   img.addEventListener("click", function () {
     overlay.style.backgroundImage = "url(" + img.src + ")";
-    overlay.style.backgroundSize = "70%";
+    overlay.style.backgroundSize = "50%";
     overlay.style.display = "block";
   });
 });
